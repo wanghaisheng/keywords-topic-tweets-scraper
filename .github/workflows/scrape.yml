@@ -13,6 +13,16 @@ name: Scrape depression tweets
 
 on:
   workflow_dispatch:
+
+    inputs:
+      hashtags:
+        description: 'hashtags'
+        type: enviroment
+        required: True
+      outdir:
+        description: 'out dir '
+        type: enviroment
+        required: True      
 #   push:  
 #   schedule:
 #   - cron: '0 0 * * *' # @daily
@@ -34,6 +44,9 @@ jobs:
         pip install -r requirements.txt
     - name: Fetch latest data
       run: python twitter_scraper.py
+      env:
+        hashtags: ${{ github.event.inputs.hashtags }}          
+        outdir: ${{ github.event.inputs.outdir }}            
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
