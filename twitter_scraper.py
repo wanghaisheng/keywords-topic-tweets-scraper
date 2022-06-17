@@ -3,7 +3,7 @@ import os
 # import twint
 import pathlib
 hashtags = os.getenv('hashtags').strip()
-out = os.getenv('out').strip()
+outdir = os.getenv('outdir').strip()
 
 keywords=[]
 if ',' in hashtags:
@@ -14,7 +14,7 @@ else:
 
 DATE_START = str(datetime.datetime.today().date() - datetime.timedelta(days=1))
 
-DATA_PATH = pathlib.Path(out.replace('/','')+"/")
+DATA_PATH = pathlib.Path(outdir.replace('/','')+"/")
 DATA_PATH.mkdir(parents=True, exist_ok=True)
 # MAX_RESULT = 100
 # DATE_END = '2020-05-08'
