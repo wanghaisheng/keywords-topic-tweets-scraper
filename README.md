@@ -1,7 +1,12 @@
-# depression-tweets-scraper
+# keyword-tweets-scraper
 
-[![Scrape depression tweets](https://github.com/ahmedshahriar/depression-tweets-scraper/actions/workflows/scrape.yml/badge.svg)](https://github.com/ahmedshahriar/depression-tweets-scraper/actions/workflows/scrape.yml)
+[![Scrape any hashtag tweets](https://github.com/ahmedshahriar/depression-tweets-scraper/actions/workflows/scrape.yml/badge.svg)](https://github.com/ahmedshahriar/depression-tweets-scraper/actions/workflows/scrape.yml)
 
-Git scraper for `#depression` tweets.
+gui  with github action input
 
-This scraper will scrape  tweets with `depression` hashtag and save them in a json file under `data` folder daily.
+
+
+
+Git scraper for `#hashtag` tweets.
+
+This scraper will scrape  tweets with `hashtag` hashtag and save them in a json file under `data` folder daily.
