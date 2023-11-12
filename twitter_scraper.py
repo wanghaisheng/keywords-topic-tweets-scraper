@@ -10,7 +10,7 @@ if ',' in hashtags:
     keywords = hashtags.split(',')
 
 else:
-    keywords=[].append(hashtags)
+    keywords=keywords.append(hashtags)
 
 DATE_START = str(datetime.datetime.today().date() - datetime.timedelta(days=1))
 
